@@ -26,7 +26,7 @@
 }
 /*-----------------------content样式--------------------------------------------*/
 .content{
-	margin:5% 10%;
+	margin:3.5% 10%;
 }
 
 .link{
@@ -38,6 +38,7 @@
 }
 .comment{
 	width:75%;
+	height:30%;
 	margin:0 10%;
 }
 .section {
@@ -49,19 +50,33 @@
 }
 .weight{
     font-weight:blod;
+		font-size: 16px;
 }
 .indent{
 	padding:0 20px;
 }
 /*--------------footer样式---------------------------*/
+/*----
+	关键点在于，html height 100%; body min-height 100%; body 下面留空隙给 footer, footer 绝对定位在空隙里面
+---*/
+html{height:100%}
+body{min-height:91%;padding-bottom: @footer-height;position:relative;box-sizing:border-box;}
+body #footer{height: @footer-height;width:100%;position:absolute;bottom:0; left:0;}
+
 #footer{
     width:100%;
-    margin:2% 0 20px 0;
+	height:9%;
+    /*margin:2% 0 20px 0;*/
     color:#999;
-		font-size:15px;
+	font-size:15px;
+}
+#pageFooter{
+	width:100%;
+	height:9%;
+	margin:0 0 20px 0;
 }
 .icon{
-    margin:5px 0;
+    margin:0;
 }
 .red{
     color:#999;
@@ -835,12 +850,16 @@ pre .xml .cdata {
 /*--------------------------------@media 屏幕自适应--------------------------------------*/
 @media screen and (max-width: 48em){
     #layout{
-        font-size:13px;
+        font-size:14px;
         font-family:"Lucida Grande", "Lucida Sans Unicode", Lucida, Helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
     ,"华文细黑";
+			background:#ccc;
     }
+		.content-dist {
+    		margin: 0 8%;
+		}
     .markdown-body, .highlight .line{
-        font-size:12px;
+        font-size:14px;
     }
     .header, .content {
         padding-left: 0.9em;

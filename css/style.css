@@ -24,9 +24,36 @@
 .dist{
 	margin:0 100px;
 }
+
+/*添加右边tags索引样式*/
+.navRight{
+    width:17%;
+    position:fixed;
+    bottom:10%;
+    top:10%;
+    right:0;
+    z-index: 1000; /* so the menu or its navicon stays above all content */
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    border-left:1px solid #ccc;
+    color:#999;
+}
+.navRight h5{
+    text-align:center;
+}
+.label{
+    width:65%;
+    margin:5% 0 0 8%;
+    font-size:17px;
+    font-weight:blod;
+}
 /*-----------------------content样式--------------------------------------------*/
 .content{
-	margin:3.5% 10%;
+	margin:3.5% 3%;
+    border-bottom:1px solid #eee;
+}
+.contentPage{
+    margin:3.5% 10%;
 }
 
 .link{
@@ -50,26 +77,38 @@
 }
 .weight{
     font-weight:blod;
-		font-size: 16px;
+	font-size: 16px;
 }
 .indent{
 	padding:0 20px;
 }
+
 /*--------------footer样式---------------------------*/
 /*----
 	关键点在于，html height 100%; body min-height 100%; body 下面留空隙给 footer, footer 绝对定位在空隙里面
 ---*/
-html{height:100%}
-body{min-height:93%;padding-bottom: @footer-height;position:relative;box-sizing:border-box;}
-body #footer{height: @footer-height;width:100%;position:absolute;bottom:0; left:0;}
-
-#footer{
-    width:100%;
-	height:9%;
-    /*margin:2% 0 20px 0;*/
-    color:#999;
-	font-size:14px;
+html{
+    height:100%
 }
+body{
+    min-height:93%;
+    padding-bottom: @footer-height;
+    position:relative;
+    box-sizing:border-box;}
+body #footer{
+    height: @footer-height;
+    width:100%;
+    position:absolute;
+    bottom:0; left:0;
+    color:#999;
+    font-size:14px;}
+
+/*-----------push为空白的div，用来防止#footer中position：absolute覆盖内容-------------------------*/
+.push{
+    width:100%;
+    height:40px;
+}
+
 #pageFooter{
 	width:100%;
 	height:9%;
@@ -103,6 +142,7 @@ body #footer{height: @footer-height;width:100%;position:absolute;bottom:0; left:
 .content-dist{
 	margin:0 15%;
 }
+
 /**
  *------------------------------MarkDown Style---------------------------------
 */
@@ -855,11 +895,10 @@ pre .xml .cdata {
         font-size:14px;
         font-family:"Lucida Grande", "Lucida Sans Unicode", Lucida, Helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
     ,"华文细黑";
-			background:#ccc;
     }
-		.content-dist {
-    		margin: 0 8%;
-		}
+	.content-dist {
+		margin: 0 8%;
+	}
     .markdown-body, .highlight .line{
         font-size:14px;
     }
@@ -867,6 +906,9 @@ pre .xml .cdata {
         padding-left: 0.9em;
         padding-right: 0.5em;
         margin:0;
+    }
+    .navRight{
+        display:none;
     }
     .comment{
         width:92%;

@@ -39,7 +39,7 @@
 .comment{
 	width:75%;
 	height:30%;
-	margin:0 10%;
+	margin:0 10% 10px 10%;
 }
 .section {
     padding-top: 1em;
@@ -60,7 +60,7 @@
 	关键点在于，html height 100%; body min-height 100%; body 下面留空隙给 footer, footer 绝对定位在空隙里面
 ---*/
 html{height:100%}
-body{min-height:91%;padding-bottom: @footer-height;position:relative;box-sizing:border-box;}
+body{min-height:93%;padding-bottom: @footer-height;position:relative;box-sizing:border-box;}
 body #footer{height: @footer-height;width:100%;position:absolute;bottom:0; left:0;}
 
 #footer{
@@ -68,16 +68,17 @@ body #footer{height: @footer-height;width:100%;position:absolute;bottom:0; left:
 	height:9%;
     /*margin:2% 0 20px 0;*/
     color:#999;
-	font-size:13px;
+	font-size:14px;
 }
 #pageFooter{
 	width:100%;
 	height:9%;
+    color:#999;
 	margin:0 0 20px 0;
-    font-size:13px;
+    font-size:14px;
 }
 .icon{
-    margin:0;
+    margin:0 0 4px 0;
 }
 .red{
     color:#999;

@@ -222,6 +222,7 @@ Hides the menu at `48em`, but modify this based on your app's needs.
     #layout {
         padding-left: 150px; /* left col width "#menu" */
         left: 0;
+        padding-right: 150px; /* left col width "#navRight"*/
     }
     #menu {
         left: 150px;
@@ -237,7 +238,7 @@ Hides the menu at `48em`, but modify this based on your app's needs.
         left: 150px;
     }
 
-    .markdown-body, .highlight .line{
+    .markdown-body, .highlight .line, #page{
         font-size:17px;
     }
 }

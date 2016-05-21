@@ -60,7 +60,7 @@
 }
 #page{
     font-size:16px;
-    margin:25px 0 35px 0;
+    margin:25px 0 40px 0;
     float:right;
 }
 .pageLink{
@@ -938,7 +938,6 @@ pre .xml .cdata {
     .contentPage {
         margin: 3.5% 10%;
     }
-}
 @media screen and (max-width: 30em){
     #layout{
         font-size:14px;

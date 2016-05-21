@@ -68,7 +68,7 @@ The content `<div>` is where all your content goes.
 .content-subhead {
     margin: 20px 0 10px 0;
     font-weight: 300;
-    color: #888;
+    color: #444;
     font-size:17px;
 }
 
@@ -208,7 +208,7 @@ small screens.
 /*
 Hides the menu at `48em`, but modify this based on your app's needs.
 */
-@media (min-width: 48em) {
+@media (min-width: 52em) {
     #layout{
         font-family:"Lucida Grande", "Lucida Sans Unicode", Lucida, Helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
     ,"华文细黑","微软雅黑";

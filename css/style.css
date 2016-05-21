@@ -95,6 +95,7 @@
 .weight{
     font-weight:blod;
 	font-size: 16px;
+    margin-right:20px;
 }
 .indent{
 	padding:0 20px;
@@ -149,11 +150,15 @@ body #footer{
 /*----------------------------content内容样式--------------------------------------*/
 .tags{
 	text-decoration:underline;
+    margin-right:10px;
 }
 .content-dist{
 	margin:0 15%;
 }
-
+.content-cot{
+    height:40%;
+    margin:0 15%;
+}
 /**
  *------------------------------MarkDown Style---------------------------------
 */

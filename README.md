@@ -1,6 +1,7 @@
 # WLinYu.github.io
 采用hexo搭建在github上，用jade写的主题.
-写文章是采用markdown
+<br>
+写文章是采用markdown语法
 ```bush
 //清除原来的静态文件
 hexo c

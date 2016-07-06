@@ -12,6 +12,13 @@
 .center{
 	text-align:center;
 }
+.height{
+    height:400px;
+    overflow:hidden;
+    margin: 0;
+    color: #333;
+    font-size:20px;
+}
 .textDist{
     margin-top:50px;
 }
@@ -51,6 +58,17 @@
 .content{
 	margin:5% 3%;
     border-bottom:1px solid #eee;
+}
+.contentHome{
+    margin:0 12%;
+    -webkit-box-shadow:0 0 10px #CCC;  
+    -moz-box-shadow:0 0 10px #CCC;  
+    box-shadow:0 0 10px #CCC;  
+}
+.shadow{
+    -webkit-box-shadow:0 0 10px #CCC;  
+    -moz-box-shadow:0 0 10px #CCC;  
+    box-shadow:0 0 10px #CCC;  
 }
 .contentPage{
     margin:3.5% 14% 0 10%;
@@ -254,12 +272,14 @@ body #footer{
 .markdown-body a {
     color:#444; 
     /*#4078c0*/
-    text-decoration: none;
+   /* text-decoration: none;*/
 }
 
 .markdown-body a:hover,
 .markdown-body a:active {
     text-decoration: underline;
+    color:#000;
+    font-weight:bold;
 }
 
 .markdown-body hr {

@@ -11,3 +11,5 @@ hexo g
 gexo d
 ```
 __blog__：http://wlyu.cn.com
+
+__themes__:https://github.com/WLinYu/WLinYu.github.io/tree/master/theames-WLY

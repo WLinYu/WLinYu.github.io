@@ -1,0 +1,19 @@
+doctype html
+html(lang="zh-CN")
+	head
+		include ../partial/_head
+	body
+		#layout
+			//Menu toggle
+			a.menu-link#menuLink(href="#menu")
+				span.fa.fa-navicon
+			// Hamburger icon
+			div
+				include ../partial/_nav
+			div
+				include ../partial/_navTags
+			#content
+				block content
+			.push
+			include ../partial/_footer
+		include ../partial/_scripts

@@ -1,0 +1,9 @@
+mixin tags(tag)
+	.label
+		i.fa.fa-gg.indent
+			a.margin-dist.link(href=url_for(tag.path))=tag.name
+
+.navRight
+	h5 标签索引
+	each tag in site.tags.toArray()
+		+tags(tag)

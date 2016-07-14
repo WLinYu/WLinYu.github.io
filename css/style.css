@@ -61,14 +61,14 @@
 }
 .contentHome{
     margin:0 12%;
-    -webkit-box-shadow:0 0 10px #CCC;  
-    -moz-box-shadow:0 0 10px #CCC;  
-    box-shadow:0 0 10px #CCC;  
+    -webkit-box-shadow:0 0 10px #CCC;
+    -moz-box-shadow:0 0 10px #CCC;
+    box-shadow:0 0 10px #CCC;
 }
 .shadow{
-    -webkit-box-shadow:0 0 10px #CCC;  
-    -moz-box-shadow:0 0 10px #CCC;  
-    box-shadow:0 0 10px #CCC;  
+    -webkit-box-shadow:0 0 10px #CCC;
+    -moz-box-shadow:0 0 10px #CCC;
+    box-shadow:0 0 10px #CCC;
 }
 .contentPage{
     margin:3.5% 14% 0 10%;
@@ -116,7 +116,7 @@
     margin-right:20px;
 }
 .indent{
-	padding:0 20px;
+	padding:0 0 0 20px;
 }
 .margin-dist{
     margin-left:10px;
@@ -270,7 +270,7 @@ body #footer{
 }
 
 .markdown-body a {
-    color:#444; 
+    color:#444;
     /*#4078c0*/
    /* text-decoration: none;*/
 }

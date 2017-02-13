@@ -88,7 +88,7 @@ appears on the left side of the page.
     bottom: 0;
     z-index: 1000; /* so the menu or its navicon stays above all content */
     background: #191818;
-    overflow-y: auto;
+    overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
     box-shadow: 0 0 0px 4px white, 0 0 4px 4px #222;
 }
